@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600');
+
+/* Written by Olivia*/
+
+body {
+  --font: 'Abril Fatface', Georgia, serif;
+  --pink: rgb(223, 41, 125);
+  --light-pink: rgba(255, 141, 196, 0.792);
+  --text: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 202, 223);
+  text-align: center;
+}
+
+h1, summary {
+  text-align: center;
+  font-family: var(--font);
+  font-weight: 400;
+  margin: 0em;
+  padding: 0.5em 0em 0.2em 0em;
+}
+
+summary {
+  font-size: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: var(--text);
+  padding: 0;
+  margin: 0.1rem;
+}
+
+hr {
+  border-style: solid;
+  width: 100%;
+  border-color: var(--pink);
+}
+
+#content_wrapper {
+  /* width: calc(100% - 3em); */
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+header {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  box-sizing: border-box;
+}
+
+section {
+  display: grid;
+  justify-items: center;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 1em;
+
+}
+
+#button_wrapper {
+  --button-border: rgba(255, 255, 255, 0.5);
+  --button-colour: rgba(0, 0, 0, 0);
+  --button-hover: rgba(255, 255, 255, 0.3);
+  --button-active: rgb(212, 69, 188);
+  --button-target-border: var(--pink);
+  --button-font: var(--text);
+
+  /* font-family: 'Noto Serif', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1em 0em;
+}
+
+.face_button {
+  width: 20%;
+  height: 50px;
+  min-width: fit-content;
+  font: 400 medium var(--button-font);
+  border: solid 2px var(--button-border);
+  border-radius: 20px;
+  background-color: var(--button-colour);
+  transition: all 0.5s ease-out;
+}
+
+.face_button:hover {
+  background-color: var(--button-hover);
+}
+
+.face_button:active {
+  background-color: var(--button-active);
+}
+
+.face_button:target {
+  border: Solid 5px var(--button-target-border);
+  color: var(--button-target-border);
+  font:600 larger var(--button-font);
+  text-transform: uppercase;
+}
+
+canvas {
+  width: 100%;
+  border: 5px solid var(--light-pink);
+  border-radius: 250px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+#explanation {
+  width:80%;
+}
+
+@media screen and (min-width:600px) {
+  h1 {
+    font-size: 3rem;
+  }
+  #explanation {
+    width:100%;
+  }
+}

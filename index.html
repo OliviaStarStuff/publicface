@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="title" content="Olivia's Webtech Assignment 2">
+  <meta name="author" content="Olivia">
+  <meta name="copyright" content="Olivia">
+  <meta name="description" content="An Interactive Face made by Olivia for Webtech Assignment 2">
+
+  <!-- OpenGraph tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="Unknown">
+  <meta property="og:title" content="Olivia's Webtech Assignment 2">
+  <meta property="og:description" content="An Interactive Face made by Olivia for Webtech Assignment 2">
+  <meta property="og:image" content="images/metatag.png">
+  <meta property="og:site_name" content="Olivia's Webtech Assignment 2">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Olivia's Webtech Assignment 2</title>
+  <link rel="stylesheet" href="css/core.css">
+
+  <!-- Utilities functions and classes -->
+  <script src="js/guides.js"></script>
+  <script src="js/randomrgb.js"></script>
+  <script src="js/points.js"></script>
+</head>
+
+<body>
+  <div id="content_wrapper">
+    <header>
+      <h1>Olivia's Assignment 2</h1>
+      <hr>
+    </header>
+    <!-- <nav></nav> -->
+    <main>
+      <section>
+        <div id="button_wrapper">
+          <button onclick="location.href='#button_one';" class="face_button" id="button_one">Neutral</button>
+          <button onclick="location.href='#button_two';" class="face_button" id="button_two">Angry</button>
+          <button onclick="location.href='#button_three';" class="face_button" id="button_three">Happy</button>
+        </div>
+        <canvas width="500" height="600" role="presentation" id="face">A face</canvas>
+
+        <div id="output_area">0,0</div>
+
+        <script src="js/canvas.js"></script>
+        <script src="js/feature.js"></script>
+        <script src="js/face.js"></script>
+        <script src="js/interactive.js"></script>
+      </section>
+      <section id="explanation">
+        <details>
+          <summary>Instructions</summary>
+          <p>Click on the buttons to change the facial expression</p>
+          <p>Click on the eyes to close the eye</p>
+          <p>Click on the lips to change the lip colour</p>
+          <p>Click on anywhere else that is not the face to add random coloured circles</p>
+          <p>Lip colour and eye states are preserved through each expression change</p>
+          <p>Clicking on lip colour repeatedly will cycle through the lip colours</p>
+          <p>Clicking on an eye repeatedly will open and close the eye</p>
+          <p>This assignment works on mobile up to 550px width</p>
+          <p>This assignment uses no experimental features so is compatible with most browsers</p>
+          <p>HTML and CSS validated with no issues</p>
+        </details>
+
+      </section>
+    </main>
+    <footer>Copyright, Olivia</footer>
+
+  </div>
+</body>
+
+</html>
